@@ -16,7 +16,7 @@ function handleSubmit(event) {
             body: JSON.stringify({data})
         })
         .then((res) => res.json())
-        .then(Client.updateUI(res))
+        .then((res) => Client.updateUI(res))
     } else {
         alert('Please enter a valid URL starting with http:// or https://')
     }
