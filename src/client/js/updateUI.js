@@ -1,3 +1,5 @@
+// Function to update the UI with the response from the API
+
 function updateUI (apiResponse) {
     console.log(apiResponse);
             document.getElementById('agreement').innerHTML = 'Agreement: ' + apiResponse.agreement;

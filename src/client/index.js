@@ -9,8 +9,6 @@ import './styles/footer.scss'
 import './styles/header.scss'
 import './styles/results.scss'
 
-alert("I EXIST")
-
 export {
     checkInput,
     handleSubmit,

@@ -3,17 +3,11 @@ dotenv.config();
 
 var path = require('path')
 const express = require('express')
-const mockAPIResponse = require('./mockAPI.js')
 var bodyParser = require('body-parser')
 var cors = require('cors')
 const fetch = require("node-fetch");
 
-var json = {
-    'title': 'test json response',
-    'message': 'this is a message',
-    'time': 'now'
-}
-
+// referring to the env file to get the API key
 const api_key = process.env.apiKey;
 
 const app = express()
@@ -27,14 +21,9 @@ app.use(bodyParser.urlencoded({
 
 app.use(express.static('dist'))
 
-console.log(JSON.stringify(mockAPIResponse))
-
+// displaying the index.html
 app.get('/', function (req, res) {
     res.sendFile('dist/index.html')
-})
-
-app.get('/test', function (req, res) {
-    res.json(mockAPIResponse);
 })
 
 // designates what port the app will listen to for incoming requests
@@ -42,6 +31,7 @@ app.listen(8081, function () {
     console.log('Example app listening on port 8081!')
 })
 
+// Call to the API and sending back the data to the client
 app.post('/process', async function(req, res){
     console.log(`https://api.meaningcloud.com/sentiment-2.1?key=${api_key}&url=${req.body.data}&lang=en`);
     const response = await fetch (`https://api.meaningcloud.com/sentiment-2.1?key=${api_key}&url=${req.body.data}&lang=en`); 
