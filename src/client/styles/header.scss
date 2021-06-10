@@ -1,5 +1,24 @@
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 40px;
+    background-color: grey;
+}
+
+.logo {
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    background-color: orange;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.navigation {
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    background-color: orange;
+    padding: 5px;
 }
