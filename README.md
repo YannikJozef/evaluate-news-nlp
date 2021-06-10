@@ -1,8 +1,8 @@
 # Overview
 
-[General Information](# General Info)
-[Technologies](# Technologies)
-[Installation](# Installation)
+[General Information](#General-Information)
+[Technologies](#Technologies)
+[Installation](#Installation)
 
 # General Info
 
