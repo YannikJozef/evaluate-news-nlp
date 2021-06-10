@@ -8,7 +8,7 @@
 
 The application offers an interface for the user to get articles of the internet analyzed in regard to sentiment via an API of MeaningCloud to use Natural Language Processing
 
-The goal of this project is to give you practice with:
+The goal of this project for the student was to get practice with:
 
 - Setting up Webpack
 - Sass styles
@@ -17,7 +17,7 @@ The goal of this project is to give you practice with:
 - Service workers
 - Using APIs and creating requests to external URLs
 
-The foundation of this code was delivered by Udacity. Modifications have been made in regard to the single files in regard to make the application run and to modify the user interface.
+The foundation of this code was delivered by Udacity. Modifications have been made to the single files in order to make the application run and to modify the user interface.
 
 # Technologies
 
@@ -25,7 +25,7 @@ To see all the used packages in this repository please refer to the "package.jso
 
 # Installation
 
-Fork this repo, then clone the branch of your choice from your forked repo down to your computer:
+Fork this repo, then clone the main branch down to your computer:
 
 ```
 git clone -- git@github.com:[your-user-name]/webpack-express.git --
